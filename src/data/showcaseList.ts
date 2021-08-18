@@ -1,8 +1,6 @@
 const showcaseList: Array<ShowcaseItem> = [
     {
-        path: '../../Display/ClickInBox/ClickInBox.component',
-        id: "sh1",
-        name: "Flash from Click",
+        name: "Click in Box",
         description: `As a part of the Recovering Grandeur website, this animation
         creates a node inside of the parent element at the point of
         contact (the click, using the event data generated) for several
@@ -21,9 +19,7 @@ const showcaseList: Array<ShowcaseItem> = [
         meta: ["click", "box", "interaction", "flash", "contain", "recovering", "grandeur", "delusion", "delusions", "form", "2021"]
     },
     {
-        path: '../../Display/ConcentricCircles/ConcentricCircles.component',
-        id: "sh2",
-        name: "Mouseover Canvas",
+        name: "Concentric Circles",
         description: `This widget is an HTML canvas that, upon the mouse heading over,
         shows a fan out of concentric circles radiating from the nearet
         corner. The canvas has three important elements: a starting
@@ -40,8 +36,6 @@ const showcaseList: Array<ShowcaseItem> = [
         meta: ["circle", "circles", "mouseover", "canvas", "color", "colors", "recovering", "grandeur", "delusion", "delusions", "form", "2021"]
     },
     {
-        path: '../../Display/ColorBoxes/ColorBoxes.component',
-        id: "sh3",
         name: "Color Boxes",
         description: `This widget is a grid of colored boxes with text on each
         that announces the box's hex color. The color on each div shifts based
@@ -60,8 +54,6 @@ const showcaseList: Array<ShowcaseItem> = [
         meta: ["grid", "squares", "color", "hex", "click", "recovering", "grandeur", "delusion", "delusions", "form", "2021"]
     },
     {
-        path: '../../Display/FilterGenerator/FilterGenerator.component',
-        id: "sh4",
         name: "Filter Generator",
         description: `The filter generator was something I created because I wanted to randomly generate different filters for images
         using the CSS filter property. If you don't know, CSS is a way to style things in HTML (set an items' color, height, etc.), but

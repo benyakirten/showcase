@@ -1,6 +1,8 @@
 import React, { useContext, useState, useEffect } from "react";
+import { useHistory } from 'react-router-dom';
 
 import classes from "./Sidebar.module.scss";
+import { wordsToKebab } from "@Util/strings";
 import showcaseList from "@Data/showcaseList";
 import OptionsContext from "@Options";
 
@@ -12,6 +14,7 @@ import Subtitle from '@Type/Subtitle/Subtitle.component';
 const Sidebar: React.FC<SidebarProps> = ({ onExit }) => {
     const SEARCH_TIMEOUT_TIME = 500; // milliseconds - waits half a second to apply filter
     const optionsCtx = useContext<OptionsState>(OptionsContext);
+    const history = useHistory();
     const [searchInput, setSearchInput] = useState<string>("");
     const [filterTimeout, setFilterTimeout] = useState<NodeJS.Timeout>();
     const [filteredShowcase, setFilteredShowcase] =
@@ -38,6 +41,7 @@ const Sidebar: React.FC<SidebarProps> = ({ onExit }) => {
 
     const handleListClick = (e: ShowcaseItem) => {
         optionsCtx.setShowcaseItem(e);
+        history.push(`/${wordsToKebab(e.name)}`);
         onExit();
     };
     return (

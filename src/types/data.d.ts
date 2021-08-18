@@ -8,8 +8,6 @@ type TransitionStyle = {
 }
 
 type ShowcaseItem = {
-    path: string;
-    id: string;
     name: string;
     description: string;
     meta: Array<string>;

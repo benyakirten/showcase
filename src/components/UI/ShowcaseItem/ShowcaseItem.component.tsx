@@ -10,7 +10,7 @@ const ShowcaseItem: React.FC<ShowcaseItemProps> = ({
 }) => {
     const optionsCtx = useContext<OptionsState>(OptionsContext);
     return (
-        <div className={classes.container}>
+        <section className={classes.container}>
             <div className={classes.top}>
                 <div className={classes.content}>{children}</div>
                 {optionsCtx.showControls && (
@@ -20,7 +20,7 @@ const ShowcaseItem: React.FC<ShowcaseItemProps> = ({
             {optionsCtx.showDescription && (
                 <div className={classes.bottom}>{description}</div>
             )}
-        </div>
+        </section>
     );
 };
 

@@ -4,8 +4,6 @@ const defaultState: OptionsState = {
     showDescription: true,
     toggleDescription: () => {},
     shownItem: {
-        path: '',
-        id: '',
         name: '',
         description: '',
         meta: ['']

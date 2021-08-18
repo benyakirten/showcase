@@ -2,3 +2,6 @@
 dist/
 node_modules/
 package-lock.json
+
+# For my own development so I can run the app outside of wordpress
+index.html

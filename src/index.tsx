@@ -1,12 +1,15 @@
 import React from "react";
 import { render } from "react-dom";
+import { BrowserRouter } from "react-router-dom";
 
 import App from "./App";
-import { OptionsContextProvider } from "@Store/Options/Options.context";
+import { OptionsContextProvider } from "@Options"; 
 
 render(
-    <OptionsContextProvider>
-        <App />
-    </OptionsContextProvider>,
+    <BrowserRouter basename="showcase">
+        <OptionsContextProvider>
+            <App />
+        </OptionsContextProvider>
+    </BrowserRouter>,
     document.getElementById("showcase")
 );

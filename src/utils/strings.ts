@@ -5,3 +5,5 @@ export const capitalizeEveryWord = (sentence: string | Array<string>) => {
     const capitalizedArr = strArr.map(str => capitalize(str));
     return capitalizedArr.join(' ');
 }
+
+export const wordsToKebab = (name: string) => name.split(' ').join('-').toLowerCase();

@@ -35,9 +35,13 @@ Every other folder should be obvious as to what it does.
 4. FilterGenerator
 > Exactly what its name suggests
 
+## Known errors
+* Though routing is activated, any reload on a subroute (e.g. /showcase/click-in-box) won't work
+
 ## Planned changes
 * Add testing
-* Add routing
+* Fix routing
 
 ## Changelog
 * 7/19/2021: Separated this from the benyakiredits repo
+* 7/31/2021: Added routing. Does not work correctly on refresh, and I tried various fixes.
