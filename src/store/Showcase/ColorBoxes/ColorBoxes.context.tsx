@@ -14,7 +14,7 @@ import {
 
 const ColorBoxesContext = createContext(defaultState);
 
-export const ColorBoxesContextProvider: React.FC<ContextProviderProps> = ({ children }) => {
+export const ColorBoxesContextProvider: React.FC = ({ children }) => {
     const [gridRowGap, setGridRowGap] = useRange(defaultState.gridRowGap, GRID_BOX_GAP);
     const [boxHeight, setBoxHeight] = useRange(defaultState.boxHeight, COLOR_BOX_MEASUREMENTS);
 

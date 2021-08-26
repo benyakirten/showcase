@@ -3,13 +3,13 @@ import React, { useContext } from "react";
 import classes from "./FilterGeneratorControls.module.scss";
 
 import FilterGeneratorContext from "@FilterGeneratorContext";
-import { FILTER_PROPERTIES } from "@Data/constants/showcase/filterGenerator";
+import { FILTER_PROPERTIES } from "@ShowcaseConstants/filterGenerator";
 import { capitalizeEveryWord } from "@Util/strings";
 
 import Subtitle from "@Type/Subtitle/Subtitle.component";
 import Button from "@UI/Button/Button.component";
 import Range from "@Inputs/Range/Range.component";
-import DragDropList from "@Comp/Inputs/DragDrop/DragDrop.component";
+import DragDropList from "@Inputs/DragDrop/DragDrop.component";
 
 const FilterGeneratorControls: React.FC = () => {
     const filterGeneratorCtx = useContext(FilterGeneratorContext);

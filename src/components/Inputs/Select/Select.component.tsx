@@ -17,7 +17,7 @@ const Select: React.FC<ISelectProps> = ({
         <div className={classes.controlGroup}>
             <Label htmlFor={name}>{labelText}</Label>
             <select value={value} onChange={onSelectChange}>
-                {options.map((opt) => (
+                {options.map((opt: SelectOption) => (
                     <option key={opt.value} value={opt.value}>
                         {opt.display}{additionalText}
                     </option>

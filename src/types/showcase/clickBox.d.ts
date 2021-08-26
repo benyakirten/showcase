@@ -1,17 +1,5 @@
-type Coords = {
-    x: number;
-    y: number;
-}
-
 type CoordsWithId = Coords & {
     id: number;
-}
-
-type Corners = {
-    topLeft: Coords;
-    topRight: Coords;
-    bottomRight: Coords;
-    bottomLeft: Coords;
 }
 
 type AnimationShape = keyof IShape;

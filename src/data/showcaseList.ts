@@ -67,6 +67,19 @@ const showcaseList: Array<ShowcaseItem> = [
         has no access to reasoning or answering 'why' questions. Thus, a picture that is filtered or distorted means the same thing
         to a computer as the undistorted image.`,
         meta: ["filter", "generator", "drag", "drop", "image", "color", "colors", "recovering", "grandeur", "delusion", "delusions", "form", "2021"]
+    },
+    {
+        name: "Invert Button",
+        description: `The invert box animation is something I see often on websites, and it's neat. I also wanted to
+        recreate it from scratch so I could get used to it. A button will contain some text (click here or something), and as
+        soon as you trigger it, a wave comes from one of the corners, changing the background change, and the text color will
+        change to contrasting color (usually the original color of the background). The way it works is that the button will
+        contain the text in a span and an empty div. The div is 200% as wide/tall as the button, but the overflow is hidden
+        so you can't see the part of the div that extend beyond the button... oh, and it's also scaled to 0 so it's not visible anyway. 
+        When it's triggered (usually hovered), the empty div will beecome visible and transition to a scale of 1. The transform origin
+        is a corner (or a side) with a specific clip-path so the element looks like a triangle or whatever as it fills in the background.
+        There's no deeper meaning to this, sorry. I just wanted to learn how to do this, so I used it on the egtpress.com website`,
+        meta: ['invert', 'box', 'hover', '2021', 'egtpress', 'english garden talk press']
     }
 ];
 

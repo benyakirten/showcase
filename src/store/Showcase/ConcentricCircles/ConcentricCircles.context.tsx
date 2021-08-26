@@ -13,7 +13,7 @@ import {
 
 const ConcentricCirclesContext = createContext(defaultState);
 
-export const ConcentricCirclesContextProvider: React.FC<ContextProviderProps> = ({ children }) => {
+export const ConcentricCirclesContextProvider: React.FC = ({ children }) => {
     const [numberOfCircles, setNumberOfCircles] = useRange(defaultState.numberOfCircles, CANVAS_CONCENTRIC_CIRCLES);
     const [startRadius, setStartRadius] = useRange(defaultState.startRadius, CANVAS_START_RADIUS);
     const [radiusDelta, setRadiusDelta] = useRange(defaultState.radiusDelta, CANVAS_RADIUS_DELTA);

@@ -37,6 +37,7 @@
 // LEFT: ITEM
 .content {
     flex: 2;
+    
     @include respond(tab-port) {
         max-height: 35rem;
     }

@@ -12,7 +12,7 @@ const ColorPicker: React.FC<IColorPickerProps> = ({
     const onValueChange: React.ChangeEventHandler<HTMLInputElement> = (e) => {
         if (/^#(?:[0-9A-F]{3}|[0-9A-F]{6})$/i.test(e.target.value)) {
             // This validation can be seen as redundant,
-            // but there's no reason to have this too
+            // but there's no reason to not have this too
             handleColorChange(e.target.value);
         }
     };

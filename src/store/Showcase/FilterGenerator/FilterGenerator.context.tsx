@@ -4,14 +4,12 @@ import defaultState from "./defaultState";
 
 import useRange from "@Hooks/useRange";
 
-import { FILTER_PROPERTIES } from "@Data/constants/showcase/filterGenerator";
+import { FILTER_PROPERTIES } from "@Constants/showcase/filterGenerator";
 import { getRandomItem } from "@Util/random";
 
 const FilterGeneratorContext = createContext(defaultState);
 
-export const FilterGeneratorContextProvider: React.FC<ContextProviderProps> = ({
-    children,
-}) => {
+export const FilterGeneratorContextProvider: React.FC = ({ children }) => {
     const [properties, setGeneratorProperties] = useState<
         Array<ActivatableFilter>
     >(defaultState.properties);

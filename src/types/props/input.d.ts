@@ -1,7 +1,7 @@
 interface IClickListProps {
-    list: Array;
+    list: Array<any>;
     itemKey: string;
-    handleClick: MouseEventHandler<HTMLLIElement>
+    handleClick: (e: any) => void;
 }
 
 interface LabelProps {
@@ -27,9 +27,9 @@ interface ITextInputProps extends IBaseInput {
 }
 
 interface ISelectProps extends IBaseInput {
-    handleChange: (val: string | number | Array | SelectOption) => void;
+    handleChange: (val: string | number | Array<any> | SelectOption) => void;
     options: Array<SelectOption>;
-    value: string | number | Array | SelectOption;
+    value: SelectOption["value"];
 }
 
 type SelectOption = {

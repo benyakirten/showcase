@@ -9,7 +9,7 @@ type UsableColorAndHex = ColorNameAndHex & {
 }
 
 type ColorNameToHex = {
-    [key: NamedColor]: string;
+    [key in NamedColor]: string
 }
 
 type ColorNameAndHex = {

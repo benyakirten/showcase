@@ -15,12 +15,14 @@ const Sidebar: React.FC<SidebarProps> = ({ onExit }) => {
     const SEARCH_TIMEOUT_TIME = 500; // milliseconds - waits half a second to apply filter
     const optionsCtx = useContext<OptionsState>(OptionsContext);
     const history = useHistory();
+    
     const [searchInput, setSearchInput] = useState<string>("");
     const [filterTimeout, setFilterTimeout] = useState<NodeJS.Timeout>();
     const [filteredShowcase, setFilteredShowcase] =
         useState<Array<ShowcaseItem>>(showcaseList);
     const handleChange = (e: React.FormEvent<HTMLInputElement>) =>
         setSearchInput(e.currentTarget.value);
+
     useEffect(() => {
         if (filterTimeout) {
             clearInterval(filterTimeout);

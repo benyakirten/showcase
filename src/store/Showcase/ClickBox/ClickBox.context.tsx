@@ -15,7 +15,7 @@ import { isDark } from "@Util/colors";
 
 const ClickBoxContext = createContext(defaultState);
 
-export const ClickBoxContentProvider: React.FC<ContextProviderProps> = ({
+export const ClickBoxContentProvider: React.FC = ({
     children,
 }) => {
     const [shape, setShape] = useState<AnimationShape>(defaultState.shape);

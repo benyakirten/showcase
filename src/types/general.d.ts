@@ -12,3 +12,15 @@ type LazyComponentContainer = {
 interface IEnum {
     [key: number]: any;
 }
+
+type Coords = {
+    x: number;
+    y: number;
+}
+
+type Corners = {
+    topLeft: Coords;
+    topRight: Coords;
+    bottomRight: Coords;
+    bottomLeft: Coords;
+}

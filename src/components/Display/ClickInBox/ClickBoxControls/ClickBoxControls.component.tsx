@@ -22,7 +22,7 @@ const Controls: React.FC = () => {
                 labelText="Select a Shape:"
                 name="shape"
                 value={clickBoxCtx.shape}
-                handleChange={clickBoxCtx.setShape}
+                handleChange={val => clickBoxCtx.setShape(val as keyof IShape)}
             />
             <ColorPicker
                 color={clickBoxCtx.animationColor}

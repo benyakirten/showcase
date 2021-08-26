@@ -20,6 +20,7 @@ const ColorBoxes = lazy(() => import("@Disp/ColorBoxes/ColorBoxes.component"));
 const FilterGenerator = lazy(
     () => import("@Disp/FilterGenerator/FilterGenerator.component")
 );
+const InvertButton = lazy(() => import("@Disp/InvertButton/InvertButton.component"));
 
 const Showcase: React.FC = () => {
     return (
@@ -55,6 +56,9 @@ const Showcase: React.FC = () => {
                     </Route>
                     <Route path="/filter-generator">
                         <FilterGenerator />
+                    </Route>
+                    <Route path="/invert-button">
+                        <InvertButton />
                     </Route>
                     <Route path="*">
                         <div className={classes.empty}>

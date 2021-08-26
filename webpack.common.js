@@ -39,6 +39,10 @@ module.exports = {
                 __dirname,
                 "src/store/Showcase/FilterGenerator/FilterGenerator.context"
             ),
+            "@InvertButtonContext": resolve(
+                __dirname,
+                "src/store/Showcase/InvertButton/InvertButton.context"
+            ),
             "@Util": resolve(__dirname, "src/utils"),
             "@Data": resolve(__dirname, "src/data"),
             "@Constants": resolve(__dirname, "src/data/constants"),

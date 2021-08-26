@@ -1,7 +1,3 @@
-type ContextProviderProps = {
-    children: React.ReactNode;
-}
-
 type OptionsState = {
     showControls: boolean;
     toggleControls: () => void;

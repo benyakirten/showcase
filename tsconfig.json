@@ -67,6 +67,9 @@
             "@FilterGeneratorContext": [
                 "./src/store/Showcase/FilterGenerator/FilterGenerator.context.tsx"
             ],
+            "@InvertButtonContext": [
+                "./src/store/Showcase/InvertButton/InvertButton.context.tsx"
+            ],
             "@Util/*": ["./src/utils/*"],
             "@Data/*": ["./src/data/*"],
             "@Constants/*": ["./src/data/constants/*"],
